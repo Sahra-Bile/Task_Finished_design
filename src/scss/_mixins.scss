@@ -9,9 +9,9 @@
 }
 
 
-// @mixin desktop{
-//     @media  screen and (min-width:v.$desktop_breakpoints) {
-//         @content;
+@mixin desktop{
+    @media  screen and (min-width:v.$desktop_breakpoints) {
+        @content;
         
-//     }
-// }
+    }
+}
