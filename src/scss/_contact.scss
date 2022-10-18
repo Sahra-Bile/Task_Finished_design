@@ -1,0 +1,49 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+     background-color: v.$primary_4;
+
+     @include m.tablet{
+        flex-direction: row;
+        justify-content: none;
+       
+     }
+
+     p{
+        text-align: center;
+        color: v.$primary_1;
+        margin-top: 20px;
+        font-size: 20px;
+
+     }
+     .footer-item{
+        color: v.$primary_1;
+        padding-top: 16px;
+        padding-bottom: 10px;
+     }
+
+      a{
+        color: v.$primary_1;
+        position: relative;
+        margin-top: 30px;
+        font-weight: bold;
+        font-size: 18px;
+        &:hover{
+            color: blue;
+        }
+      
+          }
+          #icon{
+            margin-top: 10px;
+            padding-right: 20px;
+            font-size: 30px;
+
+         
+           
+          }
+  }

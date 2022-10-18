@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+// @use "mixins" as m;
+
+
+.welcome{
+    height: 100%; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 10px;
+   color: v.$primary_1;
+   font-weight: bold;
+   font-size: 24px;
+ 
+   & p{
+    margin-top: 30px;
+     font-size: 18px;
+  }
+ 
+}

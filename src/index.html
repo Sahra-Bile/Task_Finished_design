@@ -3,8 +3,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Färdig design</title>
+    <title>Färdig Design</title>
     <link rel="stylesheet" href="./scss/_main.scss" />
+    
+    <!-- font-awesome from cdnjs.cloudflare.com -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -14,20 +16,96 @@
     />
   </head>
   <body>
-    <header class="container"></header>
-    <nav class="menu">
-      <ul class="nav-bar">
-        <input type="checkbox" id="check" />
-        <span class="menu">
-          <li><a href="">Hem</a></li>
-          <li><a href="">Om</a></li>
-          <li><a href="">Kontakt</a></li>
-          <label for="check" class="close-menu"
-            ><i class="fas fa-times"></i
+    <!-- navigation header -->
+    <main class="container" id="background-image" >
+      <nav class="navbar" id="home">
+        <ul class="nav-bar">
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="#home">Hem</a></li>
+            <li><a href="#about">Om</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times"></i
+            ></label>
+          </span>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
           ></label>
-        </span>
-        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-      </ul>
-    </nav>
+        </ul>
+      </nav>
+      <!-- welcome and description -->
+
+      <article class="welcome">
+        <h1>Welcome to nature</h1>
+        <p>A journey through time and sheep</p>
+        <p>To see how ...cotton ... is mage, made I mean...</p>
+      </article>
+    </main>
+     <!-- team -->
+    <section class="team">
+      <h2 id="about">Träffa laget</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h3>Rakib</h3>
+          <img src="/assets/profiles/Rakib_Square.png" alt=" image of Rakib" />
+          <div class="text">
+            <p>
+              Rikad är vår vassaste node-utvecklare och håller ständigt ett öga
+              på nya takniker
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <h3>Alexandra</h3>
+          <img src="/assets/profiles/Alexandra_Square.png" alt="image of Alexandra" />
+          <div class="text">
+            <p>
+              Alexandra håller reda på alla överallt och ser till att det
+              flyter.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <h3>Lasse</h3>
+          <img src="/assets/profiles/NoPerson_Square.png" alt=" image of Lasse" />
+          <div class="text">
+            <p>Gör övriga saker... Mestadels ...</p>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <h3>Sebastian</h3>
+          <img src="/assets/profiles/Sebastian_Square.png" alt="image of Sebastian" />
+          <div class="text">
+            <p>
+              En av våra utbildare som har stor erfarenhet av ganska många saker
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <footer id="footer">
+      <div class="footer-item" id="contact">
+        <p>Tegel Consulting AB</p>
+        <p>Agatvägen 18</p>
+        <p>168 60 Bromma</p>
+      </div>
+      <div class="footer-item">
+        <a href="milto:info@tegelconsulting.se">Info at tegelconsulting.se</a>
+        <p>070-123 456 78</p>
+      </div>
+        <a href="https://instagram.com" target="_blank"><i  id="icon" class="fa-brands fa-instagram"></i>Instagram</a>
+
+        <a href="https://twitter.com" target="_blank"><i  id="icon" class="fa-brands fa-twitter"></i>Twitter</a>
+        <a href="https://facebook.com" target="_blank"><i  id="icon" class="fa-brands fa-facebook-f"></i>Facebook</a>
+     
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,54 @@
+
+@use "mixins" as m;
+@use "variables" as v;
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-column-gap: 10px;
+
+    @include m.tablet{
+     grid-template-columns: 1fr 1fr;
+     grid-column-gap: 20px;
+
+    }
+
+   & #about{
+     text-align: center;
+     color: v.$primary_2;
+    margin-top: 40px;
+   }
+     
+
+  & .grid-item{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+
+    @include m.tablet{
+    justify-content: space-between;
+    flex-direction: row;
+
+   
+       }
+
+    & img {
+        width: 50%;
+        border-radius: 50%;
+    }
+
+.text{
+  text-align: center;
+  color: #222;
+  background-color: bisque;
+  border-radius: 5px;
+  padding: 40px;
+
+   
+       }
+}
+ }
+
+
