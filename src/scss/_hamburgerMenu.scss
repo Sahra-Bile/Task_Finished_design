@@ -71,7 +71,7 @@ body {
           & a {
             display: inline-block;
             text-decoration: none;
-            color: #fff;
+            color: v.$primary_1;
             text-align: center;
             transition: 0.15s ease-in-out;
             position: relative;
@@ -87,7 +87,7 @@ body {
               left: 0;
               width: 0;
               height: 1px;
-              background-color: #fff;
+              background-color: v.$primary_1;
               transition: 0.15s ease-in-out;
             }
             & a:hover:after {
@@ -99,7 +99,7 @@ body {
       .open-menu,
       .close-menu {
         position: absolute;
-        color: #fff;
+        color: v.$primary_1;
         cursor: pointer;
         font-size: 1.5rem;
         display: none;
