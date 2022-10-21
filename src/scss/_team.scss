@@ -1,77 +1,92 @@
 @use "mixins" as m;
 @use "variables" as v;
 
-#about {
-  text-align: center;
-  color: v.$primary_2;
-  margin-top: 40px;
-  padding-left: 20px;
-}
-#arrow-2 {
-  font-size: 30px;
-  margin-top: 20px;
-  padding-left: 250px;
-  background-color: v.$primary_1;
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  @include m.desktop {
-    padding-left: 500px;
-    margin-top: 30px;
-  }
-
-  @include m.desktop {
-    padding-left: 750px;
-    margin-top: 40px;
-  }
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 10px;
-
-  @include m.desktop {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  & .grid-item {
-    display: flex;
+  & #about {
     text-align: center;
-    flex-direction: column;
-    align-items: center;
+    color: v.$primary_2;
+    margin-top: 40px;
+    padding-left: 20px;
+  }
+
+  & .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
 
     @include m.desktop {
-      // tänk vad du behöver egentligen
-      // flex-direction: column;
+      grid-template-columns: 1fr 1fr;
     }
 
-    & h3 {
-      margin-top: 30px;
-    }
-
-    & img {
-      width: 50%;
-      border-radius: 50%;
-      margin-top: 30px;
-    }
-
-    .text {
+    & .grid-item {
+      display: flex;
       text-align: center;
-      color: v.$primary_2;
-      background-color: v.$primary_3;
-      padding: 30px 1px 30px 1px;
-      border-radius: 20px;
-      margin-top: 30px;
+      flex-direction: column;
+      align-items: center;
 
-      @include m.desktop {
+      & h3 {
+        margin-top: 50px;
+      }
+
+      & img {
+        width: 50%;
+        border-radius: 50%;
+        margin-top: 40px;
+      }
+
+      & .text {
         text-align: center;
-        border-radius: 10px;
-        padding: 16px;
-        margin-top: 20px;
-      }
+        color: v.$primary_2;
+        background-color: v.$primary_3;
+        margin-top: 50px;
+        border-radius: 30px;
 
-      & #quote {
-        padding-right: 5px;
-        font-size: 40px;
+        @include m.desktop {
+          border-radius: 10px;
+          padding: 16px;
+        }
+
+        & p {
+          padding: 10px;
+          margin: 20px;
+          line-break: loose;
+
+          @include m.desktop {
+            padding: 30px;
+            margin: 10px;
+            word-break: break-all;
+          }
+
+          & #quote {
+            padding-right: 5px;
+            font-size: 60px;
+          }
+        }
       }
+    }
+  }
+
+  #arrow-2 {
+    font-size: 30px;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: v.$primary_1;
+
+    @include m.tablet {
+      padding-right: 100px;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    @include m.desktop {
+      padding-left: 2px;
+      margin-bottom: 40px;
     }
   }
 }

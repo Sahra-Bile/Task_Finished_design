@@ -10,16 +10,11 @@
   margin-top: 80px;
 
   @include m.desktop {
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 40px;
   }
 
-  @include m.desktop {
-    flex-direction: row;
-    margin-top: 30px;
-  }
-
-  p {
+  & p {
     text-align: center;
     color: v.$primary_1;
     margin-top: 20px;
@@ -36,10 +31,12 @@
     color: v.$primary_1;
     font-size: 18px;
     text-decoration: none;
-    //  position: relative;
-
     &:hover {
       color: blue;
+    }
+    @include m.desktop {
+      display: block;
+      margin-top: 40px;
     }
   }
   #icon {

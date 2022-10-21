@@ -8,28 +8,42 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 10px;
-  color: v.$primary_1;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 50px;
 
   @include m.desktop {
     padding: 20px;
     font-size: 30px;
   }
+  & h1 {
+    padding: 10px;
+    color: v.$primary_1;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+  }
 
-  & p {
+  & .journy {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 30px;
+    padding: 20px;
 
     @include m.desktop {
       margin-top: 40px;
       font-size: 24px;
     }
   }
+  & .to {
+    margin-top: 40px;
+    padding: 30px;
+    font-size: 30px;
+  }
   & #arrow {
-    margin-top: 100px;
-    color: v.$primary_1;
+    font-size: 30px;
+    margin-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @include m.desktop {
+    margin-top: 300px;
   }
 }
